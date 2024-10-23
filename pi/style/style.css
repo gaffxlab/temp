@@ -1,0 +1,149 @@
+.all{
+    text-align: center;
+}
+.allsecao5{
+    text-align: center;
+}
+.genzlogo{
+    color: var(--verde);
+    font-size: 62px;
+    -webkit-text-stroke: 1px black;
+    font-family: "Aldrich", sans-serif;
+}
+.genzlogosc5{
+    color: var(--verde);
+    font-size: 62px;
+    -webkit-text-stroke: 1px black;
+    font-family: "Aldrich", sans-serif;
+    
+}
+.txtdynamics{
+    font-size: 64px;
+    margin-top: -25px;
+    font-family: "Aldrich", sans-serif;
+    text-align: center;
+}
+
+.programaaux{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 64px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.modal{
+    width: 917px;
+    height: 572px;
+    border: 5px solid black;
+}
+.modal p{
+    display: flex;
+    justify-content: center;
+}
+.modal input{
+    margin-top: 200px;
+    background-color: black;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    width: 215px;
+    height: 48px;
+}
+
+.modal img{
+    width: 129px;
+    height: 129px;
+}
+
+footer {
+    background-color: black;
+}
+
+.boneco {
+    margin-top: 10px;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    animation: moveBoneco 15s infinite;
+    margin-bottom: -10px;
+}
+
+.div1 {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.pernae, .pernad {
+    position: relative;
+}
+
+.pernad {
+    animation: movepernae 1s infinite;
+    margin-top: -8px;
+    z-index: 10;
+}
+
+.pernae {
+    margin-top: -8px;
+    z-index: 10;
+}
+.pernad {
+    animation: movepernad 2s infinite;
+}
+@keyframes moveBoneco {
+    0% { left: -500px; }
+    50% { left: 500px; }
+    100% { left: 500px; }
+}
+@keyframes movepernae {
+    0% { left: 0px; }
+    50% { left: 100px; }
+    100% { left: 0px; }
+}
+
+@keyframes movepernad {
+    0% { left: -35px; }
+    50% { left: -5px; }
+    100% { left: -35px; }
+}
+
+/* Carrossel header ================================================================================================*/
+
+/* Centraliza o carrossel na tela */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+  
+  /* Estilização do container do carrossel */
+.carousel_header {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel_header > div{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+  
+  /* Estilização das imagens */
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+  
+  /* Imagem ativa */
+.active {
+    opacity: 1;
+}
